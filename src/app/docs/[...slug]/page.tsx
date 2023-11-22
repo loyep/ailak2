@@ -2,23 +2,19 @@ import path from "path";
 import fs from "fs";
 import { compileMDX } from "next-mdx-remote/rsc";
 import { type Metadata } from "next";
+import glob from 'fast-glob'
 import { notFound } from "next/navigation";
 
 const docsPath = path.join(process.cwd(), "docs");
 
 const slugToPath = (slug: string[]) => {
-  let slugPath = slug.join("/");
-  console.log(slugPath)
-  if (slugPath === "") {
-    slugPath = "index";
-  }
-  if (fs.existsSync(path.join(docsPath, `${slugPath}.mdx`))) {
-    return `${slugPath}.mdx`;
-  }
-  if (fs.existsSync(path.join(docsPath, `${slugPath}/index.mdx`))) {
-    return `${slugPath}/index.mdx`;
-  }
-  return `${slugPath}.mdx`;
+  const slugPath = slug.join("/");
+  const paths = [`${slugPath}.(mdx|md)`, path.join(slugPath, 'index.(mdx|md)')]
+  const files = glob.sync(paths, {
+    cwd: docsPath,
+    onlyFiles: true,
+  })
+  return files[0]!
 }
 
 const getData = async ({ slug }: { slug: string[] }) => {
