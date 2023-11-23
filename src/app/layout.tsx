@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-
+import { Analytics } from '@vercel/analytics/react'
 import { Inter } from "next/font/google";
 // import { cookies } from "next/headers";
 
@@ -27,6 +27,7 @@ export default function RootLayout({
         {/* <TRPCReactProvider cookies={cookies().toString()}> */}
         {children}
         {/* </TRPCReactProvider> */}
+        <Analytics />
       </body>
     </html>
   );
