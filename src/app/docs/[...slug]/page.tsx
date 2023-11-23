@@ -20,9 +20,7 @@ const slugToPath = (slug: string[]) => {
 const getData = async ({ slug }: { slug: string[] }) => {
   try {
     const slugPath = slugToPath(slug);
-    console.log('slug path', slugPath)
     const fixturePath = path.join(docsPath, slugPath);
-    console.log('fixture path', fixturePath)
     const source = await fs.promises.readFile(fixturePath, "utf8");
 
     const { content, frontmatter: meta } = await compileMDX({

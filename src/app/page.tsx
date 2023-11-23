@@ -1,5 +1,6 @@
 import Link from "next/link";
-
+import { Button, Typography } from "antd";
+import Header from '../layouts/landing/header'
 // import { CreatePost } from "@/app/_components/create-post";
 // import { getServerAuthSession } from "@/server/auth";
 // import { api } from "@/trpc/server";
@@ -14,7 +15,9 @@ export default async function Home() {
         <h1 className="text-5xl font-extrabold tracking-tight sm:text-[5rem]">
           Ai Lak
         </h1>
+        <Header />
         <Link href="/docs/test">Docs</Link>
+        <Button>Ant Design</Button>
        
         {/* <div className="flex flex-col items-center gap-2">
           <p className="text-2xl">

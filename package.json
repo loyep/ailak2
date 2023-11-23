@@ -12,7 +12,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@ant-design/cssinjs": "1.17.2",
+    "@ant-design/cssinjs": "1.17.5",
     "@ant-design/icons": "^5.2.6",
     "@auth/drizzle-adapter": "^0.3.8",
     "@mdx-js/loader": "^3.0.0",
@@ -28,7 +28,7 @@
     "@types/mdx": "^2.0.10",
     "@vercel/analytics": "^1.1.1",
     "aegis-web-sdk": "^1.38.7",
-    "antd": "^5.11.2",
+    "antd": "^5.11.3",
     "clsx": "^2.0.0",
     "dayjs": "^1.11.10",
     "drizzle-orm": "^0.28.6",
