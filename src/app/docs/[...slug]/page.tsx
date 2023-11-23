@@ -4,7 +4,7 @@ import { compileMDX } from "next-mdx-remote/rsc";
 import { type Metadata } from "next";
 import glob from 'fast-glob'
 import { notFound } from "next/navigation";
-import { Typography } from "antd";
+import { Mdx } from "@/layouts/docs/mdx";
 
 const docsPath = path.join(process.cwd(), "docs");
 
@@ -58,7 +58,6 @@ export default async function DocsPage({
   params: { slug: string[] };
 }) {
   const { content, title } = await getData({ slug: params.slug });
-  // return <div>{content}</div>;
 
   return (
     <>
@@ -91,13 +90,11 @@ export default async function DocsPage({
           <div>
             <header className="mb-6">
               <h1 className="h2 text-slate-800 mb-4 xxl dark:text-slate-200">{title}</h1>
-              {/* <Typography.Title>{ title }</Typography.Title> */}
               <p className="text-lg text-slate-600 dark:text-slate-400">
                 {/* {post.summary} */}
               </p>
             </header>
-            {/* <Mdx code={post.body.code} /> */}
-            {content}
+            <Mdx>{content}</Mdx>
           </div>
 
           {/* Feedback */}

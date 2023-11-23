@@ -206,7 +206,7 @@ export default function Sidebar() {
                     }}
                   </SidebarLinkGroup>
                   {/* 1st level */}
-                  <li className="mb-1">
+                  {/* <li className="mb-1">
                     <Link
                       href="/help/how-can-we-help"
                       className={`relative flex items-center font-[650] text-slate-800 p-1 before:absolute before:inset-0 before:rounded before:bg-gradient-to-tr before:from-blue-400 before:to-purple-500 before:opacity-20 before:-z-10 before:pointer-events-none dark:text-slate-200 ${!segments.includes('help') && 'before:hidden'}`}
@@ -228,7 +228,7 @@ export default function Sidebar() {
                       </svg>
                       <span>Help / Support</span>
                     </Link>
-                  </li>                  
+                  </li> */}
                 </ul>
               </nav>
             </div>
