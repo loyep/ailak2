@@ -27,6 +27,7 @@
     "@trpc/server": "^10.44.0",
     "@types/mdx": "^2.0.10",
     "@vercel/analytics": "^1.1.1",
+    "aegis-web-sdk": "^1.38.7",
     "antd": "^5.11.2",
     "clsx": "^2.0.0",
     "dayjs": "^1.11.10",

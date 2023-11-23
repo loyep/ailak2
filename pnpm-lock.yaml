@@ -50,6 +50,9 @@ dependencies:
   '@vercel/analytics':
     specifier: ^1.1.1
     version: 1.1.1
+  aegis-web-sdk:
+    specifier: ^1.38.7
+    version: 1.38.7
   antd:
     specifier: ^5.11.2
     version: 5.11.3(react-dom@18.2.0)(react@18.2.0)
@@ -1366,6 +1369,12 @@ packages:
     resolution: {integrity: sha512-nc0Axzp/0FILLEVsm4fNwLCwMttvhEI263QtVPQcbpfZZ3ts0hLsZGOpE6czNlid7CJ9MlyH8reXkpsf3YUY4w==}
     engines: {node: '>=0.4.0'}
     hasBin: true
+
+  /aegis-web-sdk@1.38.7:
+    resolution: {integrity: sha512-fTsS6sUTv6NZgRxpESxI364x6SCF4A49Q6KvQkWlu1EkjBWQUycdq+LCy1iPE8IKQIm3BCvr5muMFzMTzqp6bA==}
+    dependencies:
+      web-vitals: 3.5.0
+    dev: false
 
   /ajv-keywords@3.5.2(ajv@6.12.6):
     resolution: {integrity: sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==}
@@ -5320,6 +5329,10 @@ packages:
     dependencies:
       glob-to-regexp: 0.4.1
       graceful-fs: 4.2.11
+    dev: false
+
+  /web-vitals@3.5.0:
+    resolution: {integrity: sha512-f5YnCHVG9Y6uLCePD4tY8bO/Ge15NPEQWtvm3tPzDKygloiqtb4SVqRHBcrIAqo2ztqX5XueqDn97zHF0LdT6w==}
     dev: false
 
   /webpack-sources@3.2.3:

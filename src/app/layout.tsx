@@ -1,6 +1,7 @@
 import "@/styles/globals.css";
 import { Analytics } from '@vercel/analytics/react'
 import { Inter } from "next/font/google";
+import Aegis from '../components/aegis'
 // import { cookies } from "next/headers";
 
 // import { TRPCReactProvider } from "@/trpc/react";
@@ -28,6 +29,7 @@ export default function RootLayout({
         {children}
         {/* </TRPCReactProvider> */}
         <Analytics />
+        <Aegis />
       </body>
     </html>
   );
