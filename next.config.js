@@ -15,7 +15,8 @@ const withMDX = createMDX({
 
 /** @type {import("next").NextConfig} */
 const config = {
-  pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
+  reactStrictMode: true,
+  pageExtensions: ['jsx', 'js', 'ts', 'tsx', 'mdx', 'md'],
   experimental: {
     mdxRs: true,
   },
