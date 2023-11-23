@@ -18,7 +18,6 @@ export default async function Home() {
         <Header />
         <Link href="/docs/test">Docs</Link>
         <Button>Ant Design</Button>
-       
         {/* <div className="flex flex-col items-center gap-2">
           <p className="text-2xl">
             {hello ? hello.greeting : "Loading tRPC query..."}

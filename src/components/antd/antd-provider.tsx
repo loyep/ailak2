@@ -5,6 +5,7 @@ import { createCache, extractStyle, StyleProvider } from '@ant-design/cssinjs'
 import { ConfigProvider } from 'antd'
 import { useServerInsertedHTML } from 'next/navigation'
 import { useMemo, useRef, type PropsWithChildren } from 'react'
+import theme from './theme'
 
 const StyledComponentsRegistry = ({ children }: PropsWithChildren) => {
   const cache = useMemo<Entity>(() => createCache(), []);
@@ -19,7 +20,7 @@ const StyledComponentsRegistry = ({ children }: PropsWithChildren) => {
   });
   return (
     <StyleProvider cache={cache} hashPriority='high'>
-      <ConfigProvider>{children}</ConfigProvider>
+      <ConfigProvider theme={theme}>{children}</ConfigProvider>
     </StyleProvider>
   )
 }

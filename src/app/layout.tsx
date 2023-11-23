@@ -3,7 +3,7 @@ import { Analytics } from '@vercel/analytics/react'
 import { Inter } from "next/font/google";
 import Aegis from '../components/aegis'
 // import { cookies } from "next/headers";
-import AntdProvder from '../components/antd-provider'
+import AntdProvder from '../components/antd/antd-provider'
 
 // import { TRPCReactProvider } from "@/trpc/react";
 
