@@ -1,0 +1,11 @@
+{
+    "name": "@ailak/ui",
+    "version": "0.0.1",
+    "description": "Ailak UI",
+    "dependencies": {
+      
+    },
+    "devDependencies": {
+        "typescript": "^5.0.0"
+    }
+}

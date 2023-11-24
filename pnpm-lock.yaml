@@ -4,165 +4,192 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
-dependencies:
-  '@ant-design/cssinjs':
-    specifier: 1.17.5
-    version: 1.17.5(react-dom@18.2.0)(react@18.2.0)
-  '@ant-design/icons':
-    specifier: ^5.2.6
-    version: 5.2.6(react-dom@18.2.0)(react@18.2.0)
-  '@auth/drizzle-adapter':
-    specifier: ^0.3.8
-    version: 0.3.8
-  '@headlessui/react':
-    specifier: ^1.7.17
-    version: 1.7.17(react-dom@18.2.0)(react@18.2.0)
-  '@mdx-js/loader':
-    specifier: ^3.0.0
-    version: 3.0.0(webpack@5.89.0)
-  '@mdx-js/react':
-    specifier: ^3.0.0
-    version: 3.0.0(@types/react@18.2.38)(react@18.2.0)
-  '@next/mdx':
-    specifier: ^14.0.3
-    version: 14.0.3(@mdx-js/loader@3.0.0)(@mdx-js/react@3.0.0)
-  '@planetscale/database':
-    specifier: ^1.11.0
-    version: 1.11.0
-  '@t3-oss/env-nextjs':
-    specifier: ^0.7.1
-    version: 0.7.1(typescript@5.3.2)(zod@3.22.4)
-  '@tanstack/react-query':
-    specifier: ^4.36.1
-    version: 4.36.1(react-dom@18.2.0)(react@18.2.0)
-  '@trpc/client':
-    specifier: ^10.44.0
-    version: 10.44.0(@trpc/server@10.44.0)
-  '@trpc/next':
-    specifier: ^10.44.0
-    version: 10.44.0(@tanstack/react-query@4.36.1)(@trpc/client@10.44.0)(@trpc/react-query@10.44.0)(@trpc/server@10.44.0)(next@14.0.3)(react-dom@18.2.0)(react@18.2.0)
-  '@trpc/react-query':
-    specifier: ^10.44.0
-    version: 10.44.0(@tanstack/react-query@4.36.1)(@trpc/client@10.44.0)(@trpc/server@10.44.0)(react-dom@18.2.0)(react@18.2.0)
-  '@trpc/server':
-    specifier: ^10.44.0
-    version: 10.44.0
-  '@types/mdx':
-    specifier: ^2.0.10
-    version: 2.0.10
-  '@vercel/analytics':
-    specifier: ^1.1.1
-    version: 1.1.1
-  aegis-web-sdk:
-    specifier: ^1.38.7
-    version: 1.38.7
-  antd:
-    specifier: ^5.11.3
-    version: 5.11.3(react-dom@18.2.0)(react@18.2.0)
-  clsx:
-    specifier: ^2.0.0
-    version: 2.0.0
-  dayjs:
-    specifier: ^1.11.10
-    version: 1.11.10
-  drizzle-orm:
-    specifier: ^0.28.6
-    version: 0.28.6(@planetscale/database@1.11.0)(mysql2@3.6.5)
-  fast-glob:
-    specifier: ^3.3.2
-    version: 3.3.2
-  lodash:
-    specifier: ^4.17.21
-    version: 4.17.21
-  next:
-    specifier: ^14.0.3
-    version: 14.0.3(react-dom@18.2.0)(react@18.2.0)
-  next-auth:
-    specifier: ^4.24.5
-    version: 4.24.5(next@14.0.3)(react-dom@18.2.0)(react@18.2.0)
-  next-mdx-remote:
-    specifier: ^4.4.1
-    version: 4.4.1(react-dom@18.2.0)(react@18.2.0)
-  next-themes:
-    specifier: ^0.2.1
-    version: 0.2.1(next@14.0.3)(react-dom@18.2.0)(react@18.2.0)
-  react:
-    specifier: 18.2.0
-    version: 18.2.0
-  react-dom:
-    specifier: 18.2.0
-    version: 18.2.0(react@18.2.0)
-  server-only:
-    specifier: ^0.0.1
-    version: 0.0.1
-  superjson:
-    specifier: ^2.2.1
-    version: 2.2.1
-  zod:
-    specifier: ^3.22.4
-    version: 3.22.4
+importers:
 
-devDependencies:
-  '@next/eslint-plugin-next':
-    specifier: ^14.0.3
-    version: 14.0.3
-  '@tailwindcss/forms':
-    specifier: ^0.5.3
-    version: 0.5.3(tailwindcss@3.3.5)
-  '@tailwindcss/typography':
-    specifier: ^0.5.9
-    version: 0.5.9(tailwindcss@3.3.5)
-  '@types/eslint':
-    specifier: ^8.44.7
-    version: 8.44.7
-  '@types/node':
-    specifier: ^18.18.12
-    version: 18.18.12
-  '@types/react':
-    specifier: ^18.2.38
-    version: 18.2.38
-  '@types/react-dom':
-    specifier: ^18.2.17
-    version: 18.2.17
-  '@typescript-eslint/eslint-plugin':
-    specifier: ^6.12.0
-    version: 6.12.0(@typescript-eslint/parser@6.12.0)(eslint@8.54.0)(typescript@5.3.2)
-  '@typescript-eslint/parser':
-    specifier: ^6.12.0
-    version: 6.12.0(eslint@8.54.0)(typescript@5.3.2)
-  autoprefixer:
-    specifier: ^10.4.16
-    version: 10.4.16(postcss@8.4.31)
-  dotenv-cli:
-    specifier: ^7.3.0
-    version: 7.3.0
-  drizzle-kit:
-    specifier: ^0.19.13
-    version: 0.19.13
-  eslint:
-    specifier: ^8.54.0
-    version: 8.54.0
-  mysql2:
-    specifier: ^3.6.5
-    version: 3.6.5
-  postcss:
-    specifier: ^8.4.31
-    version: 8.4.31
-  postcss-antd-fixes:
-    specifier: ^0.2.0
-    version: 0.2.0(postcss@8.4.31)
-  prettier:
-    specifier: ^3.1.0
-    version: 3.1.0
-  prettier-plugin-tailwindcss:
-    specifier: ^0.5.7
-    version: 0.5.7(prettier@3.1.0)
-  tailwindcss:
-    specifier: ^3.3.5
-    version: 3.3.5
-  typescript:
-    specifier: ^5.3.2
-    version: 5.3.2
+  .:
+    dependencies:
+      '@ailak/core':
+        specifier: workspace:*
+        version: link:packages/core
+      '@ant-design/cssinjs':
+        specifier: 1.17.5
+        version: 1.17.5(react-dom@18.2.0)(react@18.2.0)
+      '@ant-design/icons':
+        specifier: ^5.2.6
+        version: 5.2.6(react-dom@18.2.0)(react@18.2.0)
+      '@auth/drizzle-adapter':
+        specifier: ^0.3.8
+        version: 0.3.8
+      '@headlessui/react':
+        specifier: ^1.7.17
+        version: 1.7.17(react-dom@18.2.0)(react@18.2.0)
+      '@mdx-js/loader':
+        specifier: ^3.0.0
+        version: 3.0.0(webpack@5.89.0)
+      '@mdx-js/react':
+        specifier: ^3.0.0
+        version: 3.0.0(@types/react@18.2.38)(react@18.2.0)
+      '@next/mdx':
+        specifier: ^14.0.3
+        version: 14.0.3(@mdx-js/loader@3.0.0)(@mdx-js/react@3.0.0)
+      '@planetscale/database':
+        specifier: ^1.11.0
+        version: 1.11.0
+      '@t3-oss/env-nextjs':
+        specifier: ^0.7.1
+        version: 0.7.1(typescript@5.3.2)(zod@3.22.4)
+      '@tanstack/react-query':
+        specifier: ^4.36.1
+        version: 4.36.1(react-dom@18.2.0)(react@18.2.0)
+      '@trpc/client':
+        specifier: ^10.44.0
+        version: 10.44.0(@trpc/server@10.44.0)
+      '@trpc/next':
+        specifier: ^10.44.0
+        version: 10.44.0(@tanstack/react-query@4.36.1)(@trpc/client@10.44.0)(@trpc/react-query@10.44.0)(@trpc/server@10.44.0)(next@14.0.3)(react-dom@18.2.0)(react@18.2.0)
+      '@trpc/react-query':
+        specifier: ^10.44.0
+        version: 10.44.0(@tanstack/react-query@4.36.1)(@trpc/client@10.44.0)(@trpc/server@10.44.0)(react-dom@18.2.0)(react@18.2.0)
+      '@trpc/server':
+        specifier: ^10.44.0
+        version: 10.44.0
+      '@types/mdx':
+        specifier: ^2.0.10
+        version: 2.0.10
+      '@vercel/analytics':
+        specifier: ^1.1.1
+        version: 1.1.1
+      aegis-web-sdk:
+        specifier: ^1.38.7
+        version: 1.38.7
+      ahooks:
+        specifier: ^3.7.8
+        version: 3.7.8(react@18.2.0)
+      antd:
+        specifier: ^5.11.3
+        version: 5.11.3(react-dom@18.2.0)(react@18.2.0)
+      clsx:
+        specifier: ^2.0.0
+        version: 2.0.0
+      dayjs:
+        specifier: ^1.11.10
+        version: 1.11.10
+      drizzle-orm:
+        specifier: ^0.28.6
+        version: 0.28.6(@planetscale/database@1.11.0)(mysql2@3.6.5)
+      fast-glob:
+        specifier: ^3.3.2
+        version: 3.3.2
+      lodash:
+        specifier: ^4.17.21
+        version: 4.17.21
+      next:
+        specifier: ^14.0.3
+        version: 14.0.3(react-dom@18.2.0)(react@18.2.0)
+      next-auth:
+        specifier: ^4.24.5
+        version: 4.24.5(next@14.0.3)(react-dom@18.2.0)(react@18.2.0)
+      next-mdx-remote:
+        specifier: ^4.4.1
+        version: 4.4.1(react-dom@18.2.0)(react@18.2.0)
+      next-themes:
+        specifier: ^0.2.1
+        version: 0.2.1(next@14.0.3)(react-dom@18.2.0)(react@18.2.0)
+      react:
+        specifier: 18.2.0
+        version: 18.2.0
+      react-dom:
+        specifier: 18.2.0
+        version: 18.2.0(react@18.2.0)
+      server-only:
+        specifier: ^0.0.1
+        version: 0.0.1
+      superjson:
+        specifier: ^2.2.1
+        version: 2.2.1
+      swr:
+        specifier: ^2.2.4
+        version: 2.2.4(react@18.2.0)
+      zod:
+        specifier: ^3.22.4
+        version: 3.22.4
+    devDependencies:
+      '@next/eslint-plugin-next':
+        specifier: ^14.0.3
+        version: 14.0.3
+      '@tailwindcss/forms':
+        specifier: ^0.5.3
+        version: 0.5.3(tailwindcss@3.3.5)
+      '@tailwindcss/typography':
+        specifier: ^0.5.9
+        version: 0.5.9(tailwindcss@3.3.5)
+      '@types/eslint':
+        specifier: ^8.44.7
+        version: 8.44.7
+      '@types/node':
+        specifier: ^18.18.12
+        version: 18.18.12
+      '@types/react':
+        specifier: ^18.2.38
+        version: 18.2.38
+      '@types/react-dom':
+        specifier: ^18.2.17
+        version: 18.2.17
+      '@typescript-eslint/eslint-plugin':
+        specifier: ^6.12.0
+        version: 6.12.0(@typescript-eslint/parser@6.12.0)(eslint@8.54.0)(typescript@5.3.2)
+      '@typescript-eslint/parser':
+        specifier: ^6.12.0
+        version: 6.12.0(eslint@8.54.0)(typescript@5.3.2)
+      autoprefixer:
+        specifier: ^10.4.16
+        version: 10.4.16(postcss@8.4.31)
+      dotenv-cli:
+        specifier: ^7.3.0
+        version: 7.3.0
+      drizzle-kit:
+        specifier: ^0.19.13
+        version: 0.19.13
+      eslint:
+        specifier: ^8.54.0
+        version: 8.54.0
+      mysql2:
+        specifier: ^3.6.5
+        version: 3.6.5
+      postcss:
+        specifier: ^8.4.31
+        version: 8.4.31
+      postcss-antd-fixes:
+        specifier: ^0.2.0
+        version: 0.2.0(postcss@8.4.31)
+      prettier:
+        specifier: ^3.1.0
+        version: 3.1.0
+      prettier-plugin-tailwindcss:
+        specifier: ^0.5.7
+        version: 0.5.7(prettier@3.1.0)
+      tailwindcss:
+        specifier: ^3.3.5
+        version: 3.3.5
+      typescript:
+        specifier: ^5.3.2
+        version: 5.3.2
+
+  packages/core:
+    dependencies:
+      '@vercel/edge-config':
+        specifier: ^0.4.1
+        version: 0.4.1
+    devDependencies:
+      typescript:
+        specifier: ^5.0.0
+        version: 5.3.2
+
+  packages/ui:
+    devDependencies:
+      typescript:
+        specifier: ^5.0.0
+        version: 5.3.2
 
 packages:
 
@@ -1058,6 +1085,10 @@ packages:
       '@types/unist': 3.0.2
     dev: false
 
+  /@types/js-cookie@2.2.7:
+    resolution: {integrity: sha512-aLkWa0C0vO5b4Sr798E26QgOkss68Un0bLjs7u9qxzPT5CG+8DuNTffWES58YzJs3hrVAOs1wonycqEBqNJubA==}
+    dev: false
+
   /@types/js-yaml@4.0.9:
     resolution: {integrity: sha512-k4MGaQl5TGo/iipqb2UDG2UwjXziSWkh0uysQelTlJpX1qGlpUZYm8PnO4DxG1qBomtJUdYJ6qR6xdIah10JLg==}
     dev: false
@@ -1261,6 +1292,17 @@ packages:
       server-only: 0.0.1
     dev: false
 
+  /@vercel/edge-config-fs@0.1.0:
+    resolution: {integrity: sha512-NRIBwfcS0bUoUbRWlNGetqjvLSwgYH/BqKqDN7vK1g32p7dN96k0712COgaz6VFizAm9b0g6IG6hR6+hc0KCPg==}
+    dev: false
+
+  /@vercel/edge-config@0.4.1:
+    resolution: {integrity: sha512-4Mc3H7lE+x4RrL17nY8CWeEorvJHbkNbQTy9p8H1tO7y11WeKj5xeZSr07wNgfWInKXDUwj5FZ3qd/jIzjPxug==}
+    engines: {node: '>=14.6'}
+    dependencies:
+      '@vercel/edge-config-fs': 0.1.0
+    dev: false
+
   /@webassemblyjs/ast@1.11.6:
     resolution: {integrity: sha512-IN1xI7PwOvLPgjcf180gC1bqn3q/QaOCwYUahIOhbYUu8KA/3tw2RT/T0Gidi1l7Hhj5D/INhJxiICObqpMu4Q==}
     dependencies:
@@ -1399,6 +1441,29 @@ packages:
     resolution: {integrity: sha512-fTsS6sUTv6NZgRxpESxI364x6SCF4A49Q6KvQkWlu1EkjBWQUycdq+LCy1iPE8IKQIm3BCvr5muMFzMTzqp6bA==}
     dependencies:
       web-vitals: 3.5.0
+    dev: false
+
+  /ahooks-v3-count@1.0.0:
+    resolution: {integrity: sha512-V7uUvAwnimu6eh/PED4mCDjE7tokeZQLKlxg9lCTMPhN+NjsSbtdacByVlR1oluXQzD3MOw55wylDmQo4+S9ZQ==}
+    dev: false
+
+  /ahooks@3.7.8(react@18.2.0):
+    resolution: {integrity: sha512-e/NMlQWoCjaUtncNFIZk3FG1ImSkV/JhScQSkTqnftakRwdfZWSw6zzoWSG9OMYqPNs2MguDYBUFFC6THelWXA==}
+    engines: {node: '>=8.0.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      '@babel/runtime': 7.23.4
+      '@types/js-cookie': 2.2.7
+      ahooks-v3-count: 1.0.0
+      dayjs: 1.11.10
+      intersection-observer: 0.12.2
+      js-cookie: 2.2.1
+      lodash: 4.17.21
+      react: 18.2.0
+      resize-observer-polyfill: 1.5.1
+      screenfull: 5.2.0
+      tslib: 2.6.2
     dev: false
 
   /ajv-keywords@3.5.2(ajv@6.12.6):
@@ -2566,6 +2631,10 @@ packages:
     resolution: {integrity: sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==}
     dev: false
 
+  /intersection-observer@0.12.2:
+    resolution: {integrity: sha512-7m1vEcPCxXYI8HqnL8CKI6siDyD+eIWSwgB3DZA+ZTogxk9I4CDnj4wilt9x/+/QbHI4YG5YZNmC6458/e9Ktg==}
+    dev: false
+
   /is-alphabetical@2.0.1:
     resolution: {integrity: sha512-FWyyY60MeTNyeSRpkM2Iry0G9hpr7/9kD40mD/cGQEuilcZYS4okz8SN2Q6rLCJ8gbCt6fN+rC+6tMGS99LaxQ==}
     dev: false
@@ -2669,6 +2738,10 @@ packages:
 
   /jose@5.1.1:
     resolution: {integrity: sha512-bfB+lNxowY49LfrBO0ITUn93JbUhxUN8I11K6oI5hJu/G6PO6fEUddVLjqdD0cQ9SXIHWXuWh7eJYwZF7Z0N/g==}
+    dev: false
+
+  /js-cookie@2.2.1:
+    resolution: {integrity: sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==}
     dev: false
 
   /js-tokens@4.0.0:
@@ -4833,6 +4906,11 @@ packages:
       ajv-keywords: 3.5.2(ajv@6.12.6)
     dev: false
 
+  /screenfull@5.2.0:
+    resolution: {integrity: sha512-9BakfsO2aUQN2K9Fdbj87RJIEZ82Q9IGim7FqM5OsebfoFC6ZHXgDq/KvniuLTPdeM8wY2o6Dj3WQ7KeQCj3cA==}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
   /scroll-into-view-if-needed@3.1.0:
     resolution: {integrity: sha512-49oNpRjWRvnU8NyGVmUaYG4jtTkNonFZI86MmGRDqBphEK2EXT9gdEUoQPZhuBM8yWHxCWbobltqYO5M4XrUvQ==}
     dependencies:
@@ -5002,6 +5080,16 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
     dev: true
+
+  /swr@2.2.4(react@18.2.0):
+    resolution: {integrity: sha512-njiZ/4RiIhoOlAaLYDqwz5qH/KZXVilRLvomrx83HjzCWTfa+InyfAjv05PSFxnmLzZkNO9ZfvgoqzAaEI4sGQ==}
+    peerDependencies:
+      react: ^16.11.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      client-only: 0.0.1
+      react: 18.2.0
+      use-sync-external-store: 1.2.0(react@18.2.0)
+    dev: false
 
   /tailwindcss@3.3.5:
     resolution: {integrity: sha512-5SEZU4J7pxZgSkv7FP1zY8i2TIAOooNZ1e/OGtxIEv6GltpoiXUqWvLy89+a10qYTB1N5Ifkuw9lqQkN9sscvA==}

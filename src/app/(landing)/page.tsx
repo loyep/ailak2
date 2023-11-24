@@ -1,6 +1,8 @@
 import Link from "next/link";
-import { Button, Typography } from "antd";
-import Header from '../layouts/landing/header'
+import { getEdgeConfig } from '@ailak/core'
+import { Button } from "antd";
+import Header from '../../layouts/landing/header'
+
 // import { CreatePost } from "@/app/_components/create-post";
 // import { getServerAuthSession } from "@/server/auth";
 // import { api } from "@/trpc/server";
