@@ -1,13 +1,8 @@
 'use client'
 
-import { useRef, useEffect, useState } from 'react'
-import { usePathname, useRouter, useSelectedLayoutSegments } from 'next/navigation'
+import { useRef, useState } from 'react'
+import { usePathname, useRouter } from 'next/navigation'
 import { Transition } from '@headlessui/react'
-import Link from 'next/link'
-import { AppstoreOutlined, MailOutlined, SettingOutlined } from '@ant-design/icons';
-import SidebarLinkGroup from './sidebar-link-group'
-import SidebarLink from './sidebar-link'
-import SidebarLinkSubgroup from './sidebar-link-subgroup'
 import { Menu, type MenuProps } from 'antd'
 
 const sidebars: MenuProps['items'] = [
@@ -29,55 +24,11 @@ const sidebars: MenuProps['items'] = [
       },
     ],
   }
-  // {
-  //   label: 'Navigation Three - Submenu',
-  //   key: 'SubMenu',
-  //   icon: <SettingOutlined />,
-  //   children: [
-  //     {
-  //       type: 'group',
-  //       label: 'Item 1',
-  //       children: [
-  //         {
-  //           label: 'Option 1',
-  //           key: 'setting:1',
-  //         },
-  //         {
-  //           label: 'Option 2',
-  //           key: 'setting:2',
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       type: 'group',
-  //       label: 'Item 2',
-  //       children: [
-  //         {
-  //           label: 'Option 3',
-  //           key: 'setting:3',
-  //         },
-  //         {
-  //           label: 'Option 4',
-  //           key: 'setting:4',
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
-  // {
-  //   label: (
-  //     <a href="https://ant.design" target="_blank" rel="noopener noreferrer">
-  //       Navigation Four - Link
-  //     </a>
-  //   ),
-  //   key: 'alipay',
-  // },
 ]
 
 export default function Sidebar() {
   const sidebar = useRef<HTMLDivElement>(null)
-  const [sidebarOpen, setSidebarOpen] = useState(true)
-  const segments = useSelectedLayoutSegments()
+  const [sidebarOpen] = useState(true)
   const pathname = usePathname()
   const router = useRouter()
   const [current, setCurrent] = useState(pathname);
@@ -103,7 +54,6 @@ export default function Sidebar() {
         aria-hidden="true"
       />
 
-      {/* Sidebar */}
       <div ref={sidebar}>
         <Transition
           show={sidebarOpen}
@@ -118,7 +68,6 @@ export default function Sidebar() {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          {/* Gradient bg displaying on light layout only */}
           <div
             className="absolute inset-0 -left-[9999px] bg-gradient-to-b from-slate-50 to-white pointer-events-none -z-10 dark:hidden"
             aria-hidden="true"
@@ -126,7 +75,6 @@ export default function Sidebar() {
 
           <div className="fixed top-0 bottom-0 w-64 px-4 sm:px-6 md:pl-0 md:pr-8 overflow-y-auto no-scrollbar">
             <div className="pt-24 md:pt-28 pb-8">
-              {/* Docs nav */}
               <nav className="md:block">
                 <Menu onClick={onClick} selectedKeys={[current]} theme='dark' mode="inline" items={sidebars} />
               </nav>

@@ -14,22 +14,12 @@
     "noEmit": true,
     "module": "ESNext",
     "jsx": "preserve",
-    "plugins": [{ "name": "next" }],
     "incremental": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"],
-      "@public/*": ["./public/*"]
-    }
+    "baseUrl": "."
   },
   "include": [
-    ".eslintrc.cjs",
-    "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx",
-    "**/*.cjs",
-    "**/*.js",
-    ".next/types/**/*.ts"
+    "**/*.tsx"
   ],
   "exclude": ["node_modules"]
 }
