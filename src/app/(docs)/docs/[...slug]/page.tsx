@@ -2,7 +2,7 @@ import path from "path";
 import fs from "fs";
 import { compileMDX } from "next-mdx-remote/rsc";
 import { type Metadata } from "next";
-import glob from 'fast-glob'
+import glob from "fast-glob";
 import { notFound } from "next/navigation";
 import { Mdx } from "@/layouts/docs/mdx";
 
@@ -10,13 +10,13 @@ const docsPath = path.join(process.cwd(), "docs");
 
 const slugToPath = (slug: string[]) => {
   const slugPath = slug.join("/");
-  const paths = [`${slugPath}.(mdx|md)`, path.join(slugPath, 'index.(mdx|md)')]
+  const paths = [`${slugPath}.(mdx|md)`, path.join(slugPath, "index.(mdx|md)")];
   const files = glob.sync(paths, {
     cwd: docsPath,
     onlyFiles: true,
-  })
-  return files[0]!
-}
+  });
+  return files[0]!;
+};
 
 const getData = async ({ slug }: { slug: string[] }) => {
   try {
@@ -62,34 +62,40 @@ export default async function DocsPage({
   return (
     <>
       {/* Page header */}
-      <div className="h-16 flex items-center mb-6">
+      <div className="mb-6 flex h-16 items-center">
         {/* <TopicTitle name={post.topic.name} segment={post.topic.slug} /> */}
       </div>
 
       <article className="flex xl:space-x-12">
-
         {/* Main area */}
         <div className="min-w-0">
-
           {/* Mobile hamburger + breadcrumbs */}
-          <div className="md:hidden flex items-center mb-8">
-
+          <div className="mb-8 flex items-center md:hidden">
             {/* <Hamburger /> */}
 
             {/* Breadcrumbs */}
-            <div className="flex items-center text-sm whitespace-nowrap min-w-0 ml-3">
+            <div className="ml-3 flex min-w-0 items-center whitespace-nowrap text-sm">
               {/* <span className="text-slate-600 dark:text-slate-400">{post.topic.name}</span> */}
-              <svg className="fill-slate-400 shrink-0 mx-2 dark:fill-slate-500" width="8" height="10" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                className="mx-2 shrink-0 fill-slate-400 dark:fill-slate-500"
+                width="8"
+                height="10"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d="M1 2 2.414.586 6.828 5 2.414 9.414 1 8l3-3z" />
               </svg>
-              <span className="text-slate-800 font-medium truncate dark:text-slate-200">{title}</span>
+              <span className="truncate font-medium text-slate-800 dark:text-slate-200">
+                {title}
+              </span>
             </div>
           </div>
 
           {/* Article content */}
           <div>
             <header className="mb-6">
-              <h1 className="h2 text-slate-800 mb-4 xxl dark:text-slate-200">{title}</h1>
+              <h1 className="h2 xxl mb-4 text-slate-800 dark:text-slate-200">
+                {title}
+              </h1>
               <p className="text-lg text-slate-600 dark:text-slate-400">
                 {/* {post.summary} */}
               </p>
@@ -110,5 +116,5 @@ export default async function DocsPage({
         {/* <SecondaryNav /> */}
       </article>
     </>
-  )
+  );
 }

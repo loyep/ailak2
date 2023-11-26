@@ -1,7 +1,7 @@
 {
-  "name": "@ailak/api",
+  "name": "@ailak/trpc",
   "version": "0.0.1",
-  "description": "Ailak UI",
+  "description": "Shared tRPC library for Ailak.com",
   "dependencies": {},
   "devDependencies": {
     "typescript": "^5.3.2"

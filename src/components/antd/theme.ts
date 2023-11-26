@@ -1,5 +1,4 @@
-
-import type { ThemeConfig } from 'antd';
+import type { ThemeConfig } from "antd";
 
 const theme: ThemeConfig = {
   token: {
@@ -8,11 +7,11 @@ const theme: ThemeConfig = {
   },
   components: {
     Menu: {
-      darkSubMenuItemBg: 'transparent',
-      darkItemBg: 'transparent',
-      darkItemSelectedBg: 'transparent',
-    }
-  }
+      darkSubMenuItemBg: "transparent",
+      darkItemBg: "transparent",
+      darkItemSelectedBg: "transparent",
+    },
+  },
 };
 
 export default theme;

@@ -1,9 +1,12 @@
 {
-    "name": "@ailak/ui",
-    "version": "0.0.1",
-    "description": "Ailak UI",
-    "dependencies": {},
-    "devDependencies": {
-        "typescript": "^5.3.2"
-    }
+  "name": "@ailak/ui",
+  "version": "0.0.1",
+  "description": "Ailak UI",
+  "private": true,
+  "sideEffects": false,
+  "main": "index.tsx",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.3.2"
+  }
 }

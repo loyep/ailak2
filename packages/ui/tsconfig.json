@@ -1,25 +1,25 @@
 {
   "compilerOptions": {
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "target": "es2022",
+    "target": "es2017",
+    "baseUrl": ".",
+    "paths": {},
+    "lib": ["esnext"],
     "allowJs": true,
-    "moduleDetection": "force",
-    "isolatedModules": true,
+    "skipLibCheck": true,
     "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "checkJs": true,
     "forceConsistentCasingInFileNames": true,
-    "lib": ["dom", "dom.iterable", "ES2022"],
     "noEmit": true,
+    "esModuleInterop": true,
     "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true,
-    "baseUrl": "."
+    "strictNullChecks": true,
+    "allowSyntheticDefaultImports": true,
+    "noUncheckedIndexedAccess": true,
+    "experimentalDecorators": true
   },
-  "include": [
-    "**/*.ts",
-    "**/*.tsx"
-  ],
+  "include": ["**/*.ts", "**/*.tsx", "**/*.mjs", "**/*.js", "**/*.jsx"],
   "exclude": ["node_modules"]
 }

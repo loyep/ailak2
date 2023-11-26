@@ -1,3 +1,3 @@
 export function getEdgeConfig() {
-  return 'app'
+  return "app";
 }

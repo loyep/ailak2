@@ -1,7 +1,7 @@
 {
-  "name": "@ailak/api",
+  "name": "@ailak/shared",
   "version": "0.0.1",
-  "description": "Ailak UI",
+  "description": "Ailak Shared",
   "dependencies": {},
   "devDependencies": {
     "typescript": "^5.3.2"

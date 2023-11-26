@@ -33,5 +33,4 @@ const handler: any = auth(async (req) => {
   return response;
 });
 
-
 export { handler as GET, handler as POST };

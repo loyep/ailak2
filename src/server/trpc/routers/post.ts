@@ -1,7 +1,7 @@
 import { z } from "zod";
 
 import { desc, eq } from "drizzle-orm";
-import { schema } from '../../db'
+import { schema } from "../../db";
 
 import { createTRPCRouter, protectedProcedure, publicProcedure } from "../trpc";
 

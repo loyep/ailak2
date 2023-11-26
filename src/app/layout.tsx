@@ -1,9 +1,9 @@
 import "@/styles/globals.css";
-import { Analytics } from '@vercel/analytics/react'
+import { Analytics } from "@vercel/analytics/react";
 import { Inter } from "next/font/google";
-import Aegis from '../components/aegis'
+import Aegis from "../components/aegis";
 // import { cookies } from "next/headers";
-import AntdProvder from '../components/antd/antd-provider'
+import AntdProvder from "../components/antd/antd-provider";
 
 // import { TRPCReactProvider } from "@/trpc/react";
 
@@ -27,9 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`font-sans ${inter.variable}`}>
         {/* <TRPCReactProvider cookies={cookies().toString()}> */}
-        <AntdProvder>
-          {children}
-        </AntdProvder>
+        <AntdProvder>{children}</AntdProvder>
         {/* </TRPCReactProvider> */}
         <Analytics />
         <Aegis />
