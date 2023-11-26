@@ -18,6 +18,7 @@
     "@ant-design/cssinjs": "1.17.5",
     "@ant-design/icons": "^5.2.6",
     "@auth/core": "^0.18.3",
+    "@ailak/api": "workspace:*",
     "@auth/drizzle-adapter": "^0.3.8",
     "@headlessui/react": "^1.7.17",
     "@mdx-js/loader": "^3.0.0",

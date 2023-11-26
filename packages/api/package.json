@@ -2,7 +2,9 @@
   "name": "@ailak/api",
   "version": "0.0.1",
   "description": "Ailak UI",
-  "dependencies": {},
+  "dependencies": {
+    "hono": "^3.10.2"
+  },
   "devDependencies": {
     "typescript": "^5.3.2"
   }
