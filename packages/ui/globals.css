@@ -1,8 +1,6 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-
-/* Additional styles */
-@import "additional-styles/docs.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   :root {
@@ -76,5 +74,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-@import "tailwindcss/utilities";

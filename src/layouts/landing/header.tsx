@@ -1,10 +1,14 @@
 "use client";
 
-import { Typography } from "antd";
+import { Button } from "antd";
+
+// import { Typography } from "antd";
+
 export default function Header() {
   return (
-    <Typography>
-      <Typography.Title>Hello Ai Lak.</Typography.Title>
-    </Typography>
+    <Button>Tap AiLak.</Button>
+    // <Typography>
+    //   <Typography.Title>Hello Ai Lak.</Typography.Title>
+    // </Typography>
   );
 }

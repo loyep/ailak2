@@ -20,6 +20,7 @@ const config = {
   experimental: {
     mdxRs: true,
   },
+  transpilePackages: ["@ailak/ui", "@ailak/core", "@ailak/api"],
 };
 
 export default withMDX(config);
