@@ -1,6 +1,5 @@
 import { signIn } from "../../server/auth";
 import { Button } from "@ailak/ui";
-import { redirect } from "next/navigation";
 
 export function SignIn({
   provider,
@@ -10,10 +9,9 @@ export function SignIn({
     <form
       action={async () => {
         "use server";
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-        const url: string = await signIn(provider, { redirect: false });
-        // TODO: fix in next-auth
-        redirect(url.replace("signin", "api/auth/signin"));
+        await signIn(provider, {
+          callbackUrl: 'http://localhost:3000/',
+        });
       }}
     >
       <Button {...props}>Sign In</Button>

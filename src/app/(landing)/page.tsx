@@ -11,7 +11,9 @@ export default function Home() {
           Ai Lak
         </h1>
         <Link href="/docs/test">Docs</Link>
-        <Button>Ant Design</Button>
+        <Button>
+          <Link href="/sign-in">Sign In</Link>
+        </Button>
       </div>
     </main>
   );

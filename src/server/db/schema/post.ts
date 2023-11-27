@@ -10,5 +10,5 @@ export const post = mySqlTable("post", {
   createdAt: timestamp("created_at")
     .default(sql`CURRENT_TIMESTAMP`)
     .notNull(),
-  updatedAt: timestamp("updatedAt").onUpdateNow(),
+  updatedAt: timestamp("updatedAt").default(sql`CURRENT_TIMESTAMP`),
 });

@@ -1,4 +1,4 @@
-import { handler } from "@ailak/api";
+import { handler } from "@/server/api";
 
 export {
   handler as GET,

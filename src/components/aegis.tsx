@@ -4,6 +4,8 @@ import { useEffect, useRef } from "react";
 import type IAegisWebSdk from "aegis-web-sdk";
 
 export default function Aegis() {
+  if (process.env.NODE_ENV !== "production") return null;
+
   const aegis = useRef<IAegisWebSdk>();
 
   const loadAegis = () => {
@@ -24,6 +26,7 @@ export default function Aegis() {
   useEffect(() => {
     loadAegis();
   }, []);
+
 
   return null;
 }

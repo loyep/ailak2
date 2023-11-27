@@ -13,7 +13,7 @@ import { SignOut } from "./sign-out";
 
 export default async function UserButton() {
   const session = await auth();
-  if (!session?.user) return <SignIn />;
+  if (!session?.user) return <SignIn provider="github" />;
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
