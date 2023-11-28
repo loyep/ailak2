@@ -1,7 +1,8 @@
 /* eslint-disable @typescript-eslint/unbound-method */
 
-import Github from "@auth/core/providers/github";
-import type { DefaultSession } from "@auth/core/types";
+// import Github from "@auth/core/providers/github";
+import GitHub from "next-auth/providers/github"
+import type { DefaultSession } from "next-auth";
 import { DrizzleAdapter } from "@auth/drizzle-adapter";
 import NextAuth from "next-auth";
 import { mySqlTable } from "../db/schema/_table";
@@ -24,7 +25,7 @@ export const {
   signOut,
 } = NextAuth({
   adapter: DrizzleAdapter(db, mySqlTable),
-  providers: [Github],
+  providers: [GitHub],
   debug: process.env.NODE_ENV !== "production",
   pages: {
     signIn: "/sign-in",
