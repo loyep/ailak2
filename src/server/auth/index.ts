@@ -24,7 +24,7 @@ export const {
   signIn,
   signOut,
 } = NextAuth({
-  adapter: DrizzleAdapter(db, mySqlTable),
+  // adapter: DrizzleAdapter(db, mySqlTable),
   providers: [GitHub],
   debug: process.env.NODE_ENV !== "production",
   pages: {
