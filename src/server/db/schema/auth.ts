@@ -30,9 +30,7 @@ export const accounts = mySqlTable(
   "account",
   {
     userId: varchar("userId", { length: 255 }).notNull(),
-    type: varchar("type", { length: 255 })
-      .$type<Account["type"]>()
-      .notNull(),
+    type: varchar("type", { length: 255 }).$type<Account["type"]>().notNull(),
     provider: varchar("provider", { length: 255 }).notNull(),
     providerAccountId: varchar("providerAccountId", { length: 255 }).notNull(),
     refresh_token: varchar("refresh_token", { length: 255 }),

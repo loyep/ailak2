@@ -12,7 +12,7 @@ export default function Home() {
         </h1>
         <Link href="/docs/test">Docs</Link>
         <Button>
-          <Link href="/sign-in">Sign In</Link>
+          <Link href="/signin">Sign In</Link>
         </Button>
       </div>
     </main>

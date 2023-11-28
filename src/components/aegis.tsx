@@ -27,6 +27,5 @@ export default function Aegis() {
     loadAegis();
   }, []);
 
-
   return null;
 }
