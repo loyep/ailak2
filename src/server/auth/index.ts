@@ -1,12 +1,11 @@
 /* eslint-disable @typescript-eslint/unbound-method */
 
-// import Github from "@auth/core/providers/github";
 import GitHub from "next-auth/providers/github";
 import type { DefaultSession } from "next-auth";
-// import { DrizzleAdapter } from "@auth/drizzle-adapter";
+import { DrizzleAdapter } from "@auth/drizzle-adapter";
 import NextAuth from "next-auth";
-// import { mySqlTable } from "../db/schema/_table";
-// import { db } from "../db";
+import { mySqlTable } from "../db/schema/_table";
+import { db } from "../db";
 import type { NextAuthConfig } from "next-auth";
 
 export type { Session } from "next-auth";
@@ -20,7 +19,7 @@ declare module "next-auth" {
 }
 
 const config: NextAuthConfig = {
-  // adapter: DrizzleAdapter(db, mySqlTable),
+  adapter: DrizzleAdapter(db, mySqlTable),
   providers: [GitHub],
   debug: process.env.NODE_ENV !== "production",
   // pages: {
