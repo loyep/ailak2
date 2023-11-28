@@ -21,7 +21,7 @@ declare module "next-auth" {
 const config: NextAuthConfig = {
   adapter: DrizzleAdapter(db, mySqlTable),
   providers: [GitHub],
-  debug: process.env.NODE_ENV !== "production",
+  debug: true,
   // pages: {
   //   signIn: "/sign-in",
   // },
