@@ -1,4 +1,4 @@
-import type { AdapterAccount } from "@auth/core/adapters";
+import type { Account } from "next-auth/types";
 import { relations, sql } from "drizzle-orm";
 import {
   index,
@@ -31,7 +31,7 @@ export const accounts = mySqlTable(
   {
     userId: varchar("userId", { length: 255 }).notNull(),
     type: varchar("type", { length: 255 })
-      .$type<AdapterAccount["type"]>()
+      .$type<Account["type"]>()
       .notNull(),
     provider: varchar("provider", { length: 255 }).notNull(),
     providerAccountId: varchar("providerAccountId", { length: 255 }).notNull(),
@@ -79,6 +79,6 @@ export const verificationTokens = mySqlTable(
     expires: timestamp("expires", { mode: "date" }).notNull(),
   },
   (vt) => ({
-    compoundKey: primaryKey(vt.identifier, vt.token),
+    compoundKey: primaryKey({ columns: [vt.identifier, vt.token] }),
   }),
 );
