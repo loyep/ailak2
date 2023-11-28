@@ -1,5 +1,4 @@
 {
-  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     /* Base Options: */
     "esModuleInterop": true,
@@ -23,11 +22,11 @@
     "jsx": "preserve",
     "plugins": [{ "name": "next" }],
     "incremental": true,
+
     /* Path Aliases */
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@public/*": ["./public/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [
